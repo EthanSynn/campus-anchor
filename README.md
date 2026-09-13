@@ -1,40 +1,55 @@
-# Visual Assets
+# 校园锚点 · AI 大学成长助手
 
-这是《校园锚点》的统一视觉资产目录。
+校园锚点是一套围绕大学阶段运行的 AI 成长系统。它根据用户的年级、目标与经历，帮助用户理解当前阶段、发现适合自己的机会、采取下一步行动，并在用户确认后沉淀成长记录。
 
-## 接入规则
+## 提交入口
 
-1. 外部工具生成图片，Codex 不重新生成已经确认的 Logo、App Icon、Male AI Master、Female AI Master 或场景资产。
-2. 先把文件放入对应目录，再在 `asset-registry.json` 登记。
-3. 每个资产必须有 `asset_id`、用途、路径、版本、状态、来源和角色。
-4. `approved` 才能视为正式视觉资产；`planned`、`external-pending`、`placeholder` 不能当作最终设计。
-5. AI 人物必须先登记并确认 Master，再登记由 Master 派生的场景/状态变体。
-6. 页面通过 `AssetRegistry.get()` 或统一的 Avatar/Visual Asset 组件调用，禁止硬编码人物图片路径。
+- GitHub / Gitee 仓库：[EthanSynn/campus-anchor](https://github.com/EthanSynn/campus-anchor)
+- 在线 Demo：[https://ethansynn.github.io/campus-anchor/](https://ethansynn.github.io/campus-anchor/)
+- 项目提交文档：[PROJECT_SUBMISSION_PRD.md](PROJECT_SUBMISSION_PRD.md)
 
-## 推荐目录
+## Demo 核心闭环
 
-```text
-assets/
-├── asset-registry.json
-├── asset-registry.js
-├── brand/
-├── characters/
-│   ├── male/master/
-│   ├── male/interaction/
-│   ├── female/master/
-│   └── female/interaction/
-└── scenes/
+个人大学起点 → 当前阶段 → 个性化机会 → 大智能体解释与行动建议 → 场景模拟 → 用户选择 → AI 复盘 → 用户确认成长记录 → 日记时间线。
+
+## 当前 Demo 已实现
+
+- 当前专属任务首页：大一新生阶段、任务、成长路线、机会摘要
+- 起点画像：记录用户期待并保存 Profile
+- 机会雷达：展示匹配理由、截止时间、准备周期和行动入口
+- 大智能体：阶段化欢迎语、快捷意图、聊天输入和本地演示响应
+- 专属 AI Persona：Male / Female 二选一，选择结果持久化
+- AI 空间：选定人物作为大智能体工作区的背景视觉主体
+- 场景模拟：校园 AI 社团场景、多分支选择与 AI 复盘
+- 成长确认：用户同意后才写入成长记录
+- 日记：成长时间线与已确认记录
+- 浅色 / 深色模式
+- Asset Registry：统一登记品牌与 AI 人物视觉资产
+
+## 技术栈
+
+- 原生 HTML / CSS / JavaScript
+- localStorage：保存本地 Demo Profile、Persona、聊天与成长记录
+- 静态资源目录：assets/
+- 无后端依赖，无生产 API Key
+
+## 本地运行
+
+```bash
+python3 -m http.server 4173
 ```
 
-## 当前状态
+然后访问：http://localhost:4173/
 
-已收到并确认一张 Anchor 品牌系统参考板：`assets/brand/reference/anchor-system-board-v0.3.0.png`。它包含正底黑标、反白标、App Icon 和小尺寸探索，Registry 状态为 `approved-reference`。
+## AI 与人工协作说明
 
-目前仍没有可直接用于页面的独立正式 Logo/App Icon 文件。Demo 继续使用代码占位符；待外部工具导出独立透明背景 SVG/PNG 后，再将对应条目标记为 `approved`。
+Codex 用于产品工程、页面实现、调试、Asset Registry 和文档整理。外部视觉工具用于生成或处理已经确认的 Anchor、Male AI、Female AI 等视觉资产。产品结构、用户流程、功能取舍、视觉筛选、素材接入和最终验收由团队完成。
 
-Male AI Master 与 Female AI Master 已经作为 Demo 正式资产接入，路径分别为：
+本 Demo 当前使用本地可控演示响应，不宣称已接入生产级大模型 API。后续将通过 Provider / Router 抽象接入真实模型，并保留用户自带 API 或服务端托管模型的扩展能力。
 
-```text
-assets/characters/male/master/male-ai-master-v1.0.0.png
-assets/characters/female/master/female-ai-master-v1.0.0.png
-```
+## 安全与开源检查
+
+- 不要提交 .env、API Key、密码、Token 或私人数据。
+- 不要把学校内部文件、未授权通知或个人聊天记录放入公开仓库。
+- 公开前检查所有链接、图片来源、字体和第三方代码许可。
+- 视觉资产的模型、版本、来源与授权信息需要在提交文档中补齐。
