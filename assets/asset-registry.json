@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-12",
+  "status_values": ["planned", "external-pending", "placeholder", "approved-reference", "approved", "deprecated"],
+  "assets": [
+    {
+      "asset_id": "brand.anchor.system.board",
+      "role": "brand-reference-board",
+      "purpose": "用户确认的 Anchor 品牌系统参考板，包含正反色、App Icon 与小尺寸探索",
+      "path": "assets/brand/reference/anchor-system-board-v0.3.0.png",
+      "version": "0.3.0",
+      "status": "approved-reference",
+      "source": "user-provided-external-asset",
+      "notes": "这是参考拼版，不直接作为页面 Logo 使用；独立透明文件/SVG 需要另行导出。"
+    },
+    {
+      "asset_id": "brand.anchor.core",
+      "role": "brand-mark",
+      "purpose": "正式 Anchor Logo / Anchor Core，供品牌、启动页和官网使用",
+      "path": "assets/brand/anchor-core.svg",
+      "version": "0.1.0",
+      "status": "external-pending",
+      "source": "derived-from-approved-reference",
+      "notes": "视觉方向已确认；等待独立透明背景/矢量文件后再标记为 approved。"
+    },
+    {
+      "asset_id": "brand.anchor.mark",
+      "role": "ui-mark",
+      "purpose": "AI 身份标记、UI、小尺寸状态",
+      "path": "assets/brand/anchor-mark.svg",
+      "version": "0.1.0",
+      "status": "external-pending",
+      "source": "derived-from-approved-reference",
+      "notes": "等待从参考板独立导出透明背景文件；当前 Demo CSS 仍为占位。"
+    },
+    {
+      "asset_id": "brand.anchor.dot",
+      "role": "status-mark",
+      "purpose": "在线、思考、加载、时间线节点",
+      "path": "assets/brand/anchor-dot.svg",
+      "version": "0.1.0",
+      "status": "external-pending",
+      "source": "derived-from-approved-reference",
+      "notes": "等待独立导出；当前 Demo CSS 节点仍为占位。"
+    },
+    {
+      "asset_id": "brand.app-icon.primary",
+      "role": "app-icon",
+      "purpose": "Anchor App Icon 主版本",
+      "path": "assets/brand/app-icon-primary.png",
+      "version": "0.3.0",
+      "status": "external-pending",
+      "source": "derived-from-approved-reference",
+      "notes": "参考板中已有 App Icon 探索，等待独立导出并检查各尺寸。"
+    },
+    {
+      "asset_id": "character.male.master",
+      "role": "master-character",
+      "purpose": "Male AI Master Character；所有男 AI 场景变体的身份基准",
+      "path": "assets/characters/male/master/male-ai-master-v1.0.0.png",
+      "version": "1.0.0",
+      "status": "approved",
+      "source": "user-provided-external-asset",
+      "notes": "用户确认的 Demo 经典 Male AI Master。后续场景/状态变体必须从此身份派生。"
+    },
+    {
+      "asset_id": "character.female.master",
+      "role": "master-character",
+      "purpose": "Female AI Master Character；所有女 AI 场景变体的身份基准",
+      "path": "assets/characters/female/master/female-ai-master-v1.0.0.png",
+      "version": "1.0.0",
+      "status": "approved",
+      "source": "user-provided-external-asset",
+      "notes": "用户确认的 Demo 经典 Female AI Master。后续场景/状态变体必须从此身份派生。"
+    },
+    {
+      "asset_id": "character.male.interaction.default",
+      "role": "character-variant",
+      "purpose": "Male AI 正面交流状态",
+      "path": "assets/characters/male/interaction/default.webp",
+      "version": "0.1.0",
+      "status": "planned",
+      "source": "derived-from-master"
+    },
+    {
+      "asset_id": "character.female.interaction.default",
+      "role": "character-variant",
+      "purpose": "Female AI 正面交流状态",
+      "path": "assets/characters/female/interaction/default.webp",
+      "version": "0.1.0",
+      "status": "planned",
+      "source": "derived-from-master"
+    },
+    {
+      "asset_id": "scene.club.recruitment.default",
+      "role": "scene-asset",
+      "purpose": "第一次参加校园 AI 社团场景",
+      "path": "assets/scenes/club-recruitment/default.webp",
+      "version": "0.1.0",
+      "status": "planned",
+      "source": "external-professional-generation",
+      "notes": "Demo 当前使用 UI 场景描述，待外部场景资产确认后接入。"
+    }
+  ]
+}
