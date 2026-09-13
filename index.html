@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f6f1" />
+    <title>校园锚点 · AI大学成长助手</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="accessibility.css" />
+    <link rel="stylesheet" href="choice.css" />
+    <link rel="stylesheet" href="assets/asset-registry.css" />
+    <link rel="stylesheet" href="assets/visual-demo.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><span class="anchor-logo"><i></i></span><span>校园锚点</span></div>
+        <div class="brand-sub">AI 大学成长助手</div>
+        <nav>
+          <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span>当前专属任务</button>
+          <button class="nav-item" data-view="ai"><span class="nav-icon">✦</span>大智能体</button>
+          <button class="nav-item" data-view="diary"><span class="nav-icon">◫</span>日记</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="mini-profile"><div class="avatar small">夏</div><div><strong>林夏</strong><span>大一 · 信息管理</span></div></div>
+          <button class="settings" id="settings-button">◌ 设置</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar"><div><span class="eyebrow">2026 · 秋季学期</span><h1 id="page-title">你好，林夏</h1></div><button class="theme-toggle" id="theme-toggle">◐ <span>外观</span></button></header>
+
+        <section id="view-home" class="view active-view">
+          <div class="welcome-row"><div><p class="muted">星期六，9 月 12 日</p><h2>你正在大学的第一个锚点。</h2><p class="lead">先不用想清楚四年。今天，只需要找到下一步。</p></div><div class="anchor-orbit"><span class="orbit-ring"></span><span class="orbit-dot"></span><span class="orbit-path"></span></div></div>
+
+          <div class="stage-card"><div class="stage-label"><span class="status-dot"></span> 当前阶段 · 新生适应期</div><div class="stage-main"><div><h3>建立你的大学起点</h3><p>认识环境、建立关系，也开始试着回答：我想从大学带走什么？</p></div><button class="primary" id="start-profile">继续探索 <span>→</span></button></div><div class="progress"><span style="width: 36%"></span></div><div class="progress-meta"><span>起点画像完成 2 / 5</span><span>36%</span></div></div>
+
+          <div class="section-heading"><div><span class="eyebrow">为你筛选</span><h3>本周值得关注</h3></div><button class="text-button" id="open-radar">查看机会雷达 →</button></div>
+          <div class="opportunity-grid"><article class="opportunity-card featured"><div class="card-top"><span class="tag orange">推荐给大一</span><span class="save">☆</span></div><h3>全国大学生创新创业训练计划</h3><p class="organizer">教育部 · 创新实践</p><div class="why"><span class="anchor-mini">•</span><span><strong>为什么适合你</strong><br />你想获得实践经历，现在是了解项目、寻找队友的好时机。</span></div><div class="card-footer"><span><b>45</b> 天后截止</span><span>准备周期约 3 周</span><button class="arrow-btn" data-opportunity>→</button></div></article><article class="opportunity-card"><div class="card-top"><span class="tag blue">探索方向</span><span class="save">☆</span></div><h3>校园 AI 创意挑战</h3><p class="organizer">校团委 · 团队赛</p><div class="card-footer"><span><b>18</b> 天后截止</span><span>需要组队</span><button class="arrow-btn" data-opportunity>→</button></div></article></div>
+
+          <div class="lower-grid"><section class="panel"><div class="section-heading compact"><div><span class="eyebrow">你的路径</span><h3>大一 · 探索与试错</h3></div><span class="quiet">1 / 4</span></div><div class="path-line"><div class="path-item done"><span>01</span><div><strong>认识你的大学</strong><small>完成起点画像</small></div></div><div class="path-item current"><span>02</span><div><strong>尝试一次真实行动</strong><small>从一个小机会开始</small></div></div><div class="path-item"><span>03</span><div><strong>找到一个想深挖的方向</strong><small>等待解锁</small></div></div></div></section><section class="panel recent"><div class="section-heading compact"><div><span class="eyebrow">最近成长</span><h3>你已经走了几步</h3></div><button class="text-button" id="open-diary">全部记录 →</button></div><div class="growth-item"><span class="timeline-dot"></span><div><strong>第一次认真想象自己的大学</strong><small>今天 · 起点记录</small></div></div><div class="growth-item"><span class="timeline-dot muted-dot"></span><div><strong>完成校园锚点起点画像</strong><small>昨天 · 个人成长</small></div></div></section></div>
+        </section>
+
+        <section id="view-ai" class="view"><div class="ai-background" aria-hidden="true"></div><div class="ai-content"><div class="ai-header"><div class="ai-portrait" id="ai-avatar" data-visual-asset="ai-avatar" data-persona="male"></div><div><span class="eyebrow">你的大学智能体</span><h2>我在，和你一起找到下一步。</h2><p class="muted">我记得你是大一信息管理，也记得你想获得真实的实践经历。</p></div><div class="persona-switch" role="group" aria-label="选择 AI 形象"><button class="persona-button active" data-persona-switch="male">男 AI</button><button class="persona-button" data-persona-switch="female">女 AI</button></div></div><div class="ai-status"><span class="status-dot"></span><span>在线 · 正在听你说</span></div><div class="prompt-grid"><button data-prompt="我大一现在最应该做什么？">我现在最应该做什么？<span>→</span></button><button data-prompt="帮我找适合我的机会">找适合我的机会<span>→</span></button><button data-prompt="模拟第一次参加社团">模拟一个大学场景<span>→</span></button><button data-prompt="记录我今天的一个小变化">记录一件大学里的事<span>→</span></button></div><div class="chat-panel"><div class="chat-log" id="chat-log"><div class="message ai"><div class="message-mark">•</div><div>你不需要现在决定未来的方向。结合你目前的起点，我建议先做一件能带来真实反馈的小事：了解一个比赛，和一个可能的队友聊聊，然后再决定要不要参加。</div></div></div><form class="chat-form" id="chat-form"><input id="chat-input" placeholder="问我一个关于大学的问题……" autocomplete="off" /><button>发送</button></form></div></div></section>
+
+        <section id="view-diary" class="view"><div class="page-intro"><span class="eyebrow">把经历留下来</span><h2>日记，不只是日记。</h2><p>这里记录那些让你的大学慢慢变成“你的大学”的时刻。</p></div><div class="diary-actions"><button class="primary" id="add-diary">＋ 记录一件事</button><button class="secondary">年度成长回顾 →</button></div><div class="diary-timeline" id="diary-timeline"><div class="diary-entry"><span class="timeline-date">今天<br /><b>09.12</b></span><div class="entry-card"><span class="tag blue">起点</span><h3>第一次认真想象自己的大学</h3><p>我希望大学不只是上课和考试，也想做出一些真正属于自己的东西。</p><span class="entry-meta">AI 帮你整理 · 已确认</span></div></div><div class="diary-entry"><span class="timeline-date">昨天<br /><b>09.11</b></span><div class="entry-card"><span class="tag green">个人成长</span><h3>完成了校园锚点起点画像</h3><p>开始认识现在的自己，也给未来留下一个起点。</p><span class="entry-meta">起点记录</span></div></div></div></section>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="profile-modal"><div class="modal"><button class="modal-close" data-close aria-label="关闭">×</button><span class="eyebrow">你的大学起点 · 01 / 05</span><h2>先从一个真实问题开始。</h2><p class="muted">你对大学最期待的是什么？不用想得很完整，写下第一反应就好。</p><label class="sr-only" for="profile-answer">你的大学期待</label><textarea id="profile-answer" placeholder="例如：我希望能做出一个真正属于自己的项目……"></textarea><button class="primary full" id="save-profile">保存我的起点 →</button><p class="modal-note">你的回答只用于生成更贴合你的建议。</p></div></div>
+    <div class="toast" id="toast"></div>
+    <script src="assets/asset-registry.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

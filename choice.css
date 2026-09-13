@@ -1,0 +1,1 @@
+.choice-row{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0 8px 29px}.choice-row button{border:1px solid var(--line);background:var(--white);color:var(--ink);padding:9px 11px;font-size:11px}.choice-row button:hover{border-color:var(--blue);color:var(--blue)}

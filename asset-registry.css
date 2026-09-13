@@ -1,0 +1,1 @@
+.ai-portrait{min-width:66px;min-height:66px}.avatar-placeholder{position:relative}.avatar-placeholder:after{content:"";position:absolute;inset:-5px;border:1px dashed var(--blue);border-radius:50%;opacity:.45}.ai-portrait .online{z-index:2}
