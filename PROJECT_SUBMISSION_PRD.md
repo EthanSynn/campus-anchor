@@ -11,8 +11,8 @@
 
 | 项目 | 当前状态 | 地址 |
 |---|---|---|
-| GitHub / Gitee 公开仓库 | 待创建 / 待设为 Public | `待补充：公开仓库地址` |
-| 在线 Demo | 待部署 / 待无痕窗口验证 | `待补充：公网访问地址` |
+| GitHub / Gitee 公开仓库 | 已创建，Public，已验证可访问 | `https://github.com/EthanSynn/campus-anchor` |
+| 在线 Demo | 已部署，已验证可访问 | `https://ethansynn.github.io/campus-anchor/` |
 | 本地 Demo | 已完成 | `http://localhost:4173/` |
 
 ### 任务进程
